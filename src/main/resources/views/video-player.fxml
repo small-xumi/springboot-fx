@@ -10,7 +10,7 @@
 <?import javafx.scene.media.MediaPlayer?>
 <?import javafx.scene.media.Media?>
 
-<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wanke.videofx.controller.VideoController">
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wanke.fxboot.controller.VideoController">
     <!-- 左侧选集列表 -->
     <left>
         <VBox spacing="10" style="-fx-background-color: #f4f4f4;" padding="10">

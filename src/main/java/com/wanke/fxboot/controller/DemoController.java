@@ -1,17 +1,13 @@
-package com.wanke.videofx.controller;
+package com.wanke.fxboot.controller;
 
-import com.wanke.videofx.Launch;
-import com.wanke.videofx.config.ClientConfig;
-import com.wanke.videofx.utils.FXMLLoadUtil;
+import com.wanke.fxboot.Launch;
+import com.wanke.fxboot.config.ClientConfig;
+import com.wanke.fxboot.utils.FXMLLoadUtil;
 import jakarta.annotation.Resource;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.stage.Stage;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Controller;
 
 import java.io.IOException;

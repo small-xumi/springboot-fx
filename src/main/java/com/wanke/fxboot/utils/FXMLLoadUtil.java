@@ -1,6 +1,6 @@
-package com.wanke.videofx.utils;
+package com.wanke.fxboot.utils;
 
-import com.wanke.videofx.Launch;
+import com.wanke.fxboot.Launch;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 

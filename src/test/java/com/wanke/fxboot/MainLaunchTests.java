@@ -1,4 +1,4 @@
-package com.wanke.videofx;
+package com.wanke.fxboot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

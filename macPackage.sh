@@ -1,18 +1,14 @@
 #!/bin/bash
-# 默认参数值
+# 默认参数值，这个参数是可以自定义的，修改成你想要打包后的dmg的名称
 APP_NAME="video-fx"
-# jar包名
-JAR_NAME="springboot-fx-video.jar"
-# jvm参数
+# jar包名，这个是springboot打包后的名称，需要和<artifactId>springboot-fx</artifactId>的名称一致
+JAR_NAME="springboot-fx.jar"
+# jvm参数，这个参数跟你的实际使用场景来配置定义
 XMX="128m"
 XMS="64m"
 
-REM 输出默认参数
 echo 默认参数:
-echo APP_NAME=${APP_NAME}
-echo JAR_NAME=${JAR_NAME}
-echo XMX=${XMX}
-echo XMS=${XMS}
+echo app名称 ${APP_NAME} JVM参数 XMX=${XMX} XMS=${XMS}
 
 # 解析命令行参数
 while [[ $# -gt 0 ]]; do

@@ -1,4 +1,4 @@
-package com.wanke.videofx;
+package com.wanke.fxboot;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

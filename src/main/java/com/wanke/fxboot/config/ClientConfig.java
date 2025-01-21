@@ -1,4 +1,4 @@
-package com.wanke.videofx.config;
+package com.wanke.fxboot.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

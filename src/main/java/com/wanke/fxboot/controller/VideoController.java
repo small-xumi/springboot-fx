@@ -1,4 +1,4 @@
-package com.wanke.videofx.controller;
+package com.wanke.fxboot.controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

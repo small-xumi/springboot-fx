@@ -1,4 +1,4 @@
-package com.wanke.videofx;
+package com.wanke.fxboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,5 +18,4 @@ public class MainLaunch {
         // 启动javafx
         Launch.launch(context, args);
     }
-
 }
