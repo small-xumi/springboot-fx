@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.media.MediaPlayer?>
+<?import javafx.scene.media.Media?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wanke.videofx.controller.VideoController">
+    <!-- 左侧选集列表 -->
+    <left>
+        <VBox spacing="10" style="-fx-background-color: #f4f4f4;" padding="10">
+            <ListView fx:id="episodeList" prefWidth="150" prefHeight="400" />
+        </VBox>
+    </left>
+
+    <!-- 中间视频播放区域 -->
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <MediaView fx:id="mediaView" fitWidth="600" fitHeight="400" />
+            <HBox spacing="10" alignment="CENTER">
+                <Button text="上一集" onAction="#playPrevious" />
+                <Button text="播放" onAction="#playOrPause" />
+                <Button text="暂停" onAction="#playOrPause" />
+                <Button text="下一集" onAction="#playNext" />
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>
