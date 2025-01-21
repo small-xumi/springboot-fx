@@ -5,6 +5,13 @@ set JAR_NAME=springboot-fx-video.jar
 set XMX=128m
 set XMS=64m
 
+REM 输出默认参数
+echo 默认参数:
+echo APP_NAME=%APP_NAME%
+echo JAR_NAME=%JAR_NAME%
+echo XMX=%XMX%
+echo XMS=%XMS%
+
 REM 解析命令行参数
 :parse_args
 if "%1"=="" goto end_args

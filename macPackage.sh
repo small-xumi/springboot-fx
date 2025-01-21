@@ -7,6 +7,13 @@ JAR_NAME="springboot-fx-video.jar"
 XMX="128m"
 XMS="64m"
 
+REM 输出默认参数
+echo 默认参数:
+echo APP_NAME=${APP_NAME}
+echo JAR_NAME=${JAR_NAME}
+echo XMX=${XMX}
+echo XMS=${XMS}
+
 # 解析命令行参数
 while [[ $# -gt 0 ]]; do
   case "$1" in
