@@ -32,6 +32,6 @@ chmod +x macPackage.sh
 ```
 win打包msi
 ```shell
-package.bat
+.\winPackage.bat
 ```
 
