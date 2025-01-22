@@ -1,8 +1,8 @@
 #!/bin/bash
 # 默认参数值，这个参数是可以自定义的，修改成你想要打包后的dmg的名称
 APP_NAME="video-fx"
-# jar包名，这个是springboot打包后的名称，需要和<artifactId>springboot-fx</artifactId>的名称一致
-JAR_NAME="springboot-fx.jar"
+# jar包名，这个是springboot打包后的名称，需要和<artifactId>client</artifactId>的名称一致
+JAR_NAME="client.jar"
 # jvm参数，这个参数跟你的实际使用场景来配置定义
 XMX="128m"
 XMS="64m"
@@ -44,18 +44,18 @@ if [ $? -ne 0 ]; then
 fi
 echo "执行Maven打包命令成功."
 
-# 2. 创建 target/input 目录
-echo "Step 2: 创建 target/input 目录..."
-mkdir -p target/input
+# 2. 创建 client/target/input 目录
+echo "Step 2: 创建 client/target/input 目录..."
+mkdir -p client/target/input
 if [ $? -ne 0 ]; then
   echo "创建目录失败. Exiting..."
   exit 1
 fi
 echo "创建目录成功"
 
-# 3. 复制 jar 包到 target/input 目录
-echo "Step 3: 复制 jar 包到 target/input..."
-cp target/${JAR_NAME} target/input/app.jar
+# 3. 复制 jar 包到 client/target/input 目录
+echo "Step 3: 复制 jar 包到 client/target/input..."
+cp client/target/${JAR_NAME} client/target/input/app.jar
 if [ $? -ne 0 ]; then
   echo "复制jar包失败. Exiting..."
   exit 1
@@ -65,8 +65,8 @@ echo "复制jar包成功"
 # 4. 使用 jpackage 打包为 dmg
 echo "Step 4: 开始打包DMG..."
 jpackage \
-  --input target/input \
-  --dest target/ \
+  --input client/target/input \
+  --dest client/target/ \
   --name ${APP_NAME} \
   --main-jar app.jar \
   --app-version 1.0.0 \
@@ -79,4 +79,4 @@ if [ $? -ne 0 ]; then
   echo "打包DMG失败. Exiting..."
   exit 1
 fi
-echo "打包DMG成功，请查看target目录下."
+echo "打包DMG成功，请查看client/target目录下."

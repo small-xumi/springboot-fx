@@ -1,4 +1,4 @@
-package com.wanke.fxboot;
+package com.kuaike.fxboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,8 +1,8 @@
-package com.wanke.fxboot.controller;
+package com.kuaike.fxboot.controller;
 
-import com.wanke.fxboot.Launch;
-import com.wanke.fxboot.config.ClientConfig;
-import com.wanke.fxboot.utils.FXMLLoadUtil;
+import com.kuaike.fxboot.Launch;
+import com.kuaike.fxboot.config.ClientConfig;
+import com.kuaike.fxboot.utils.FXMLLoadUtil;
 import jakarta.annotation.Resource;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

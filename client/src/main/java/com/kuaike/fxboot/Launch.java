@@ -1,4 +1,4 @@
-package com.wanke.fxboot;
+package com.kuaike.fxboot;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

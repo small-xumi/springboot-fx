@@ -1,4 +1,4 @@
-package com.wanke.fxboot.controller;
+package com.kuaike.fxboot.controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

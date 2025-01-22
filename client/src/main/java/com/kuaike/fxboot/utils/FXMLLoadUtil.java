@@ -1,6 +1,6 @@
-package com.wanke.fxboot.utils;
+package com.kuaike.fxboot.utils;
 
-import com.wanke.fxboot.Launch;
+import com.kuaike.fxboot.Launch;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 
