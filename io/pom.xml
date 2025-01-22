@@ -10,5 +10,6 @@
     </parent>
     <packaging>pom</packaging>
     <artifactId>io</artifactId>
+    <description>本地的io模块，包含文件和数据库的操作</description>
 
 </project>

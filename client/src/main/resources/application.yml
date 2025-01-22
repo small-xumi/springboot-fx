@@ -1,6 +1,8 @@
 spring:
   application:
     name: springboot-fx-video
+#server:
+#  port: 8999
 client:
   config:
     my-app-name: video-fx
