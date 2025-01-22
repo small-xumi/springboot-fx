@@ -74,6 +74,16 @@
                 <artifactId>bootstrapfx-core</artifactId>
                 <version>0.4.0</version>
             </dependency>
+            <dependency>
+                <groupId>com.kuaike</groupId>
+                <artifactId>net</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kuaike</groupId>
+                <artifactId>io</artifactId>
+                <version>${revision}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>

@@ -57,5 +57,15 @@
             <groupId>org.kordamp.bootstrapfx</groupId>
             <artifactId>bootstrapfx-core</artifactId>
         </dependency>
+<!--        &lt;!&ndash;io模块&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.kuaike</groupId>-->
+<!--            <artifactId>io</artifactId>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash;net模块&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.kuaike</groupId>-->
+<!--            <artifactId>net</artifactId>-->
+<!--        </dependency>-->
     </dependencies>
 </project>

@@ -19,6 +19,8 @@
         <module>dependencies</module>
         <module>client</module>
         <module>parent</module>
+        <module>net</module>
+        <module>io</module>
     </modules>
     <scm>
         <connection/>

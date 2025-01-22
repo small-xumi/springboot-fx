@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: springboot-fx-video
+client:
+  config:
+    my-app-name: video-fx
