@@ -1,5 +1,7 @@
 package com.kuaike.fxboot;
 
+import atlantafx.base.theme.PrimerLight;
+import com.kuaike.fxboot.config.ClientConfig;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -34,10 +36,12 @@ public class Launch extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         // 将 Stage 注册为 Spring Bean
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/views/hello-view.fxml"));
+        Application.setUserAgentStylesheet(new PrimerLight().getUserAgentStylesheet());
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/views/main.fxml"));
         //这里需要注入controller的bean，可以让javafx的其他的类被springboot管理
         fxmlLoader.setControllerFactory(applicationContext::getBean);
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        ClientConfig config = applicationContext.getBean(ClientConfig.class);
+        Scene scene = new Scene(fxmlLoader.load(), config.getAppWidth().get(), config.getAppHeight().get());
         mainStage = primaryStage;
         mainStage.setTitle("Hello!");
         mainStage.setScene(scene);

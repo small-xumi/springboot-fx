@@ -80,6 +80,11 @@
                 <version>0.4.0</version>
             </dependency>
             <dependency>
+                <groupId>io.github.mkpaz</groupId>
+                <artifactId>atlantafx-base</artifactId>
+                <version>2.0.1</version>
+            </dependency>
+            <dependency>
                 <groupId>com.kuaike</groupId>
                 <artifactId>net</artifactId>
                 <version>${revision}</version>
